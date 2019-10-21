@@ -28,7 +28,11 @@ end
 
 def update_counting_hash(hash, key)
   hash = {:amount => 4}
+  if hash["age"]
+  hash["age"] += 1
+else
   hash["age"] = 1
+end
 
   # given a hash an a key as parameters, return an updated hash
   # if the provided key is not present in the hash, add it and assign it to the value of 1
