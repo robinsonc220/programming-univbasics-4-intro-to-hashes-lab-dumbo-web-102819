@@ -28,10 +28,10 @@ end
 
 def update_counting_hash(hash, key)
   hash = {:amount => 4}
-  if hash["age"]
-  hash["age"] = 1
+  if hash["amount"]
+  hash["amount"] += 1
 else
-  hash["age"] += 1
+  hash["age"] = 1
 end
 
   # given a hash an a key as parameters, return an updated hash
