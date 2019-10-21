@@ -28,7 +28,7 @@ end
 
 def update_counting_hash(hash, key)
   hash = {:amount => 4}
-  if hash["age"]
+  if hash[:age]
   hash["age"] += 1
 else
   hash["age"] = 1
